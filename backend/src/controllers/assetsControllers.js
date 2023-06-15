@@ -1,9 +1,7 @@
-const AssetsManager = require("../models/AssetsManager");
-
-const assetsManager = new AssetsManager();
+const models = require("../models");
 
 const browse = (req, res) => {
-  assetsManager
+  models.assets
     .findAll()
     .then((rows) => {
       res.send(rows);
@@ -17,7 +15,7 @@ const browse = (req, res) => {
 const read = (req, res) => {
   const id = parseInt(req.params.id, 10);
 
-  assetsManager
+  models.assets
     .find(id)
     .then((rows) => {
       if (rows.length === 0) {
@@ -40,7 +38,7 @@ const edit = (req, res) => {
 
   item.id = id;
 
-  assetsManager
+  models.assets
     .update(item)
     .then((result) => {
       if (result.affectedRows === 0) {
@@ -60,7 +58,7 @@ const add = (req, res) => {
 
   // TODO: Perform validations (length, format, etc.) on the item
 
-  assetsManager
+  models.assets
     .insert(item)
     .then((result) => {
       res.location(`/items/${result.insertId}`).sendStatus(201);
@@ -74,7 +72,7 @@ const add = (req, res) => {
 const destroy = (req, res) => {
   const id = parseInt(req.params.id, 10);
 
-  assetsManager
+  models.assets
     .delete(id)
     .then((result) => {
       if (result.affectedRows === 0) {
