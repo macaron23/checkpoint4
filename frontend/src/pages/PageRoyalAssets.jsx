@@ -1,8 +1,8 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable react/function-component-definition */
 import React, { useEffect, useState } from "react";
-
 import axios from "axios";
+import "./PageRoyalAssets.css";
 
 export default function RoyalAssets() {
   const [assets, setAssets] = useState([]);
@@ -20,7 +20,7 @@ export default function RoyalAssets() {
   }, []);
 
   return (
-    <div>
+    <div className="royal-assets-container">
       <h2>The Kingdom's Royal Assets</h2>
       <table>
         <thead>
