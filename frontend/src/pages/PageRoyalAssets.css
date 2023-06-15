@@ -1,0 +1,30 @@
+.royal-assets-container {
+  background-color: rgb(247, 195, 195);
+  font-family: "Great Vibes", cursive;
+  color: #333;
+}
+
+.royal-assets-container h2 {
+  font-size: 44px;
+  color: white;
+  text-shadow: 1px 1px #333;
+  text-align: left;
+}
+
+.royal-assets-container table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.royal-assets-container th {
+  background-color: rgb(220, 231, 247);
+  height: 40px;
+  font-size: 25px;
+}
+
+.royal-assets-container td {
+  background-color: rgb(248, 206, 187);
+  height: 50px;
+  font-weight: bold;
+  font-size: 20px;
+}
