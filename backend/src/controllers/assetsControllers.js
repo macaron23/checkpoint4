@@ -3,7 +3,8 @@ const models = require("../models");
 const browse = (req, res) => {
   models.assets
     .findAll()
-    .then((rows) => {
+    .then(([rows]) => {
+      console.warn("rows :", rows);
       res.send(rows);
     })
     .catch((err) => {
