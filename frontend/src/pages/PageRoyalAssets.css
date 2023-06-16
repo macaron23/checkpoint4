@@ -28,3 +28,29 @@
   font-weight: bold;
   font-size: 20px;
 }
+
+@media (max-width: 767px) {
+  .royal-assets-container {
+    padding: 20px;
+  }
+
+  .royal-assets-container h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .royal-assets-container table {
+    font-size: 14px;
+    margin: 0 auto;
+  }
+
+  .royal-assets-container th {
+    height: 30px;
+    font-size: 16px;
+  }
+
+  .royal-assets-container td {
+    height: 40px;
+    font-size: 14px;
+  }
+}

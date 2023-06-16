@@ -1,0 +1,32 @@
+.navbar {
+  background: #283b63;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px;
+  font-size: 24px;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar li a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  color: goldenrod;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: flex-start;
+    padding: 10px;
+  }
+
+  .navbar li {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+}
