@@ -1,0 +1,57 @@
+.home-container {
+  background-color: rgb(247, 195, 195);
+  font-family: "Great Vibes", cursive;
+  color: #333;
+}
+
+.home-section {
+  padding: 40px;
+  text-align: center;
+}
+
+.home-welcome {
+  height: 400px;
+  background-image: url("../../assets/Grec-temple.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.home-heading {
+  font-size: 60px;
+  color: white;
+  text-shadow: 1px 1px #333;
+  text-align: center;
+}
+
+.home-subHeading {
+  font-size: 44px;
+  color: white;
+  text-shadow: 1px 1px #333;
+  text-align: left;
+}
+
+.home-paragraph {
+  font-size: 34px;
+  color: white;
+  text-shadow: 1px 1px #333;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .home-welcome {
+    height: 200px;
+  }
+
+  .home-heading {
+    font-size: 32px;
+  }
+
+  .home-subHeading {
+    font-size: 24px;
+  }
+
+  .home-paragraph {
+    font-size: 18px;
+  }
+}
